@@ -14,5 +14,6 @@ public class Task5 {
         int difference = Math.abs(first - second);
         int quotient = first / second;
         System.out.printf("%d %d %d %d", sum, product, difference, quotient);
+        sinput.close();
     }
 }
