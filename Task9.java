@@ -24,6 +24,8 @@ public class Task9 {
             }
         }
 
+        // The two for loops could be combined
+
         System.out.println("The maximum is "+ max);
         sinput.close();
     }
