@@ -1,4 +1,3 @@
-import java.util.Set;
 
 public class Task12 {
     public static void main(String[] args){
@@ -9,7 +8,7 @@ public class Task12 {
         */
        // Set the 10 elements of integer array counts to zero. 
        int[] counts = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-
+       
        // Add one to each of the 15 elements of integer array bonus
        int[] bonus = new int[15];
        for (int i = 0; i < bonus.length; i++){
