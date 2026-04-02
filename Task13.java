@@ -9,5 +9,6 @@ public class Task13 {
         System.out.print("Enter string: ");
         String input = sinput.nextLine();
         System.out.println(input.toUpperCase() + input.toLowerCase());
+        sinput.close();
     }
 }
