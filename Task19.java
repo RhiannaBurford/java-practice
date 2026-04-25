@@ -27,4 +27,8 @@ public class Task19 {
         }
         return count;
     }
+
+    // Do while loop can be implemented but, since we don't know if the 
+    // array has elements until we check the length, a pre-test loop 
+    // (like for or while) is safer and more logical.
 }
