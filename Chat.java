@@ -63,5 +63,14 @@ public class Chat {
         return true;
     }
 
+    public void remove(User u){
+        for (int i = 0; i < users.size(); i++){
+            if (u.equals(users.get(i))){
+                users.remove(i);
+                return; // Given the assumption that there are no duplicate Users
+            }
+        }
+    }
+
 
 }
