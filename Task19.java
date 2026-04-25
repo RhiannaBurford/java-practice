@@ -14,4 +14,17 @@ public class Task19 {
         }
         return count;
     }
+
+
+    public static int countEvenWhile(int[] numList){
+        int count = 0;
+        int index = 0;
+        while (index < numList.length){
+            if (numList[index] % 2 == 0){
+                count++;
+            }
+            index++;
+        }
+        return count;
+    }
 }
