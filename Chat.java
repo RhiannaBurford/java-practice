@@ -72,5 +72,15 @@ public class Chat {
         }
     }
 
+    public void updateCentrePoint(GPSPoint newCentre){
+        area = newCentre;
+
+        for (int i = users.size(); i > 0; i--){
+            if (!shouldbeAdded(users.get(i))){
+                remove(users.get(i));
+            }
+        }
+    }
+
 
 }
