@@ -50,4 +50,18 @@ public class Chat {
     public void setDistance(double distance){
         this.distance = distance;
     }
+
+    // Assume that GPSPoint class has compare(GPSPoint p1, GPSPoint p2)
+
+    public boolean shouldBeAdded(User u){
+        GPSPoint userLocation = u.getGPSPoint();
+
+        int dist = GPSPoint.compare(userLocation, area);
+        if (dist > distance){
+            return false;
+        }
+        return true;
+    }
+
+
 }
