@@ -12,6 +12,7 @@ public class Task15{
         default: 
         //hello
             // Handles everything >= 3 and negative results
+            // alternatively you can use an array
             return 12; 
     }
 }
