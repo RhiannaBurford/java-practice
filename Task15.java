@@ -10,6 +10,7 @@ public class Task15{
         case 1:  return 8;
         case 2:  return 10;
         default: 
+        //hello
             // Handles everything >= 3 and negative results
             return 12; 
     }
