@@ -19,9 +19,15 @@ public class Shuffler<T> {
         int randIdx = (int) (Math.random() * objects.size());
 
         // 3. Remove and return in one go
-        
+
         // .remove(index) returns the object it just deleted
         return objects.remove(randIdx);
 
+    }
+
+    public void nextAuctionItem(int index) throws MissingItemException{
+        if (objects.get(index) == null){
+            throw new MissingItemException("Next item is null! ERROR");
+        }
     }
 }
