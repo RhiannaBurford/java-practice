@@ -19,7 +19,9 @@ public class Shuffler<T> {
         int randIdx = (int) (Math.random() * objects.size());
 
         // 3. Remove and return in one go
+        
         // .remove(index) returns the object it just deleted
         return objects.remove(randIdx);
+
     }
 }
