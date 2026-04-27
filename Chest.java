@@ -21,4 +21,17 @@ public class Chest<T> {
     public void setAmount(double amount){
         this.amount = amount;
     }
+
+    public void addFunds(Wallet w){
+        int amount = c.getAmount();
+        if (collectible instanceof Gems){
+            w.gemCount = w.gemCount + amount;
+        }
+        else if (type instanceof Coins){
+            w.coinCount = w.coinCount + amount;
+        }
+        else if (type instanceof Gold){
+            w.goldCount = w.goldCount + amount;
+        }
+    }
 }
